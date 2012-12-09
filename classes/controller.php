@@ -20,9 +20,9 @@ class nxcImportController {
 		'update' => array(),
 		'remove' => array()
 	);
-	private $cli;
-	private $pcHandler;
-	private $logFileHandler;
+	protected $cli;
+	protected $pcHandler;
+	protected $logFileHandler;
 
 	public function __construct( nxcImportConfig $config, $cli = false ) {
 		$this->config    = $config;
